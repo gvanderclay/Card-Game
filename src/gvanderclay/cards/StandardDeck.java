@@ -3,14 +3,29 @@ package gvanderclay.cards;
 import java.util.ArrayList;
 import java.util.List;
 
+
+/**
+ * Class that represents a standard deck of cards with no jokers
+ * @author Gage Vander Clay
+ *
+ */
 public class StandardDeck extends AbstractDeck {
 
+	/**
+	 * Maximum size of the deck
+	 */
 	private final int DECK_SIZE = 52;
 
+	/**
+	 * Constructor that fills the deck
+	 */
 	public StandardDeck() {
-		fillDeck();
+		super();
 	}
 
+	/* (non-Javadoc)
+	 * @see gvanderclay.cards.AbstractDeck#fillDeck()
+	 */
 	@Override
 	public void fillDeck() {
 		List<Card> deck = new ArrayList<Card>();
