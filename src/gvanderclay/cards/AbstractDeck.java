@@ -64,5 +64,13 @@ public abstract class AbstractDeck {
 	public void setDeck(List<Card> deck) {
 		this.deck = deck;
 	}
+	
+	/**
+	 * Returns how many cards are left in the deck
+	 * @return how many cards are in the deck
+	 */
+	public int cardsLeft(){
+		return deck.size();
+	}
 
 }

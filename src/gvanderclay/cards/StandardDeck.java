@@ -34,7 +34,7 @@ public class StandardDeck extends AbstractDeck {
 		Rank rank = Rank.ACE;
 		// loop that goes through each suit and rank
 		for (int i = 0; i < DECK_SIZE; i++) {
-			// makes sure to not put weird jokers in the deck
+			// makes sure to not put jokers in the deck
 			if (i % 13 == 0) {
 				suit = suit.next();
 				rank = Rank.ACE;
