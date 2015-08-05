@@ -17,16 +17,16 @@ import java.util.NoSuchElementException;
 public abstract class AbstractDeck {
 
 	/**
+	 * List of cards that will hold the deck
+	 */
+	protected List<Card> deck;
+	
+	/**
 	 * Constructs a new deck and fills the deck
 	 */
 	public AbstractDeck() {
 		fillDeck();
 	}
-
-	/**
-	 * List of cards that will hold the deck
-	 */
-	protected List<Card> deck;
 
 	/**
 	 * Method that will fill the card with the correct cards based on what game
@@ -75,6 +75,14 @@ public abstract class AbstractDeck {
 	 */
 	public int cardsLeft(){
 		return deck.size();
+	}
+	
+	public String toString(){
+		String result = "";
+		for(int i = 0; i < deck.size(); i++){
+			result += deck.get(i).toString() + "\n";
+		}
+		return result;
 	}
 
 }

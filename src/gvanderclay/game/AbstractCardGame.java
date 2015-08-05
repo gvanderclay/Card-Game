@@ -11,6 +11,4 @@ public class AbstractCardGame {
 	
 	protected List<Player> players;
 	
-	
-	
 }
